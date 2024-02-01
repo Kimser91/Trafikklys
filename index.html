@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>
+    Trafikklys
+  </title>
+  
+</head>
+<body onload="lightTimer()">
+
+  <div id="mainLight">
+    <div id="red" class="red light"></div>
+    <div id="yellow" class="yellow light"></div>
+    <div id="green" class="green light"></div>
+  </div>
+
+  <div>
+    <br>
+  <button onclick="activeLight('green', 'yellow', 'red', 'red')">
+    Red
+  </button>
+  <button onclick="activeLight('green', 'green', 'red', 'yellow')">
+    Red and Yellow
+  </button>
+  <button onclick="activeLight('red', 'yellow', 'green', 'green')">
+    Green
+  </button>
+  <button onclick="activeLight('red', 'green', 'yellow', 'yellow')">
+    Yellow
+  </button>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
